@@ -1,0 +1,261 @@
+.bad-dob-container {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.bad-dob-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.bad-dob-subtext {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.dob-dropdown-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border: 2px solid #6366f1;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+  transition: all 0.2s ease;
+}
+
+.dob-dropdown-trigger:hover:not(.locked) {
+  border-color: #4f46e5;
+  background-color: #f5f3ff;
+}
+
+.dob-dropdown-trigger.locked {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.trigger-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.era-icon {
+  font-size: 20px;
+}
+
+.dropdown-arrow {
+  color: #6366f1;
+  font-size: 12px;
+}
+
+.dob-dropdown-menu {
+  margin-top: 12px;
+  background-color: #ffffff;
+  border: 2px solid #818cf8;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.force-meter-banner {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.force-meter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.sensor-label {
+  font-weight: 800;
+  color: #facc15;
+  letter-spacing: 0.05em;
+}
+
+.force-badge {
+  background-color: #ef4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.force-stats {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.force-feedback-text {
+  margin: 6px 0 0 0;
+  color: #fde047;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.era-status-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.big-era-icon {
+  font-size: 32px;
+}
+
+.era-name {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.era-year-callout {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #0f172a;
+}
+
+.dropdown-options-list {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px;
+  max-height: 140px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list-instructions {
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  padding: 2px 0 6px 0;
+  font-weight: 600;
+}
+
+.dropdown-option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #f1f5f9;
+  transition: background-color 0.1s;
+}
+
+.dropdown-option-row.selected {
+  background-color: #e0e7ff;
+  border-color: #6366f1;
+  font-weight: 700;
+  color: #312e81;
+}
+
+.option-era-tag {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.month-day-row {
+  display: flex;
+  gap: 12px;
+}
+
+.month-day-row > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.month-day-row label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.bad-select {
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: white;
+}
+
+.miracle-banner {
+  background-color: #dcfce7;
+  border: 2px solid #22c55e;
+  color: #15803d;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  animation: pulse 1s infinite alternate;
+}
+
+.lock-dob-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.05s;
+}
+
+.lock-dob-btn:hover {
+  filter: brightness(1.1);
+}
+
+.lock-dob-btn:active {
+  transform: scale(0.98);
+}
+
+.dob-locked-alert {
+  margin-top: 8px;
+  background-color: #fef3c7;
+  border: 1px solid #fde047;
+  color: #854d0e;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+}

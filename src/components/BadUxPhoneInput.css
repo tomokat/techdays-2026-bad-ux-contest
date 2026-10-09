@@ -1,0 +1,130 @@
+.bad-phone-container {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.bad-phone-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.bad-phone-desc {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.phone-sections-grid {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.phone-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phone-section.number-section {
+  flex: 1.4;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.flag-select-wrapper {
+  position: relative;
+}
+
+.bad-flag-select {
+  font-size: 24px;
+  line-height: 1;
+  padding: 6px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  height: 42px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.flag-option {
+  font-size: 20px;
+}
+
+.bad-area-select {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  padding: 10px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  height: 42px;
+  max-width: 130px;
+}
+
+.bad-number-input-field {
+  padding: 10px 12px !important;
+  font-size: 14px !important;
+  font-family: monospace;
+  font-weight: bold;
+  height: 42px;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  box-sizing: border-box;
+}
+
+.auto-inc-banner {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #c2410c;
+  background-color: #ffedd5;
+  border: 1px solid #fdba74;
+  padding: 6px 10px;
+  border-radius: 6px;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.phone-preview-card {
+  margin-top: 10px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.preview-label {
+  font-weight: 600;
+  color: #64748b;
+}
+
+.preview-value {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}

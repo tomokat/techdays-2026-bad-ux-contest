@@ -1,0 +1,259 @@
+.bad-name-container {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.bad-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.bad-hint {
+  font-size: 12px;
+  color: #b45309;
+  background-color: #fef3c7;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 6px 0 12px 0;
+  line-height: 1.4;
+}
+
+.length-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.bad-number-input {
+  width: 90px !important;
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.bad-confirm-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 14px;
+  transition: transform 0.05s ease, filter 0.15s ease;
+}
+
+.bad-confirm-btn:hover {
+  filter: brightness(1.05);
+}
+
+.bad-confirm-btn:active {
+  transform: scale(0.98);
+}
+
+/* Spinning Wheel Card */
+.wheel-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.wheel-status-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #334155;
+}
+
+.no-undo-pill {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.slots-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.slot-box {
+  width: 32px;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid #cbd5e1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.slot-box.active {
+  border-color: #6366f1;
+  background-color: #e0e7ff;
+  color: #4338ca;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+.slot-box.filled {
+  border-color: #10b981;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.wheel-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.wheel-pointer {
+  position: absolute;
+  top: -8px;
+  font-size: 26px;
+  color: #ef4444;
+  z-index: 10;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 1;
+}
+
+.wheel-canvas {
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18), inset 0 0 0 4px #ffffff;
+}
+
+.needle-monitor {
+  font-size: 13px;
+  color: #475569;
+}
+
+.monitor-char {
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ef4444;
+  background: #fef2f2;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}
+
+.bad-stop-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
+  transition: transform 0.05s ease, filter 0.15s ease;
+}
+
+.bad-stop-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.bad-stop-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.bad-stop-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.locked-letter-alert {
+  width: 100%;
+  padding: 10px;
+  background-color: #fef08a;
+  border: 1px solid #facc15;
+  color: #854d0e;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  animation: popIn 0.2s ease-out;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.wheel-warning {
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Locked State */
+.locked-step-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.locked-name-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: #f1f5f9;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.lock-icon {
+  font-size: 20px;
+}
+
+.locked-text {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #0f172a;
+}
+
+.locked-subtext {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}

@@ -1,0 +1,163 @@
+.bad-email-container {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.bad-email-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.bad-email-desc {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.email-parts-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.email-body-col {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.at-separator {
+  font-size: 20px;
+  font-weight: 800;
+  color: #6366f1;
+  padding-bottom: 8px;
+}
+
+.email-domain-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sub-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.email-username-input {
+  height: 42px;
+  padding: 10px 12px !important;
+  font-size: 14px !important;
+  font-family: monospace;
+  font-weight: 600;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  box-sizing: border-box;
+}
+
+.email-domain-select {
+  height: 42px;
+  padding: 10px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: monospace;
+  color: #4338ca;
+  background-color: #e0e7ff;
+  border: 2px solid #818cf8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vintage-domain-card {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #fefce8, #fef9c3);
+  border: 1px solid #fef08a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: flashHighlight 0.25s ease-out;
+}
+
+@keyframes flashHighlight {
+  0% { transform: scale(0.98); background-color: #fde047; }
+  100% { transform: scale(1); background-color: #fefce8; }
+}
+
+.vintage-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retro-tag {
+  font-size: 10px;
+  font-weight: 800;
+  color: #854d0e;
+  letter-spacing: 0.05em;
+}
+
+.era-badge {
+  background-color: #fef08a;
+  color: #713f12;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #facc15;
+}
+
+.vintage-domain-name {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #854d0e;
+}
+
+.vintage-desc {
+  font-size: 11px;
+  color: #a16207;
+}
+
+.keystroke-ticker {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+  font-family: sans-serif;
+}
+
+.assembled-email-bar {
+  margin-top: 10px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.assembled-label {
+  font-weight: 600;
+  color: #64748b;
+}
+
+.assembled-email {
+  font-family: monospace;
+  font-weight: 800;
+  color: #4338ca;
+  font-size: 13px;
+}
